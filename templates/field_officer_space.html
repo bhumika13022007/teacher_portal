@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>Field Officer's Space</h1>
+<p>Manage school records, teachers, and classroom observations.</p>
+
+<div class="dashboard">
+
+    <!-- Top Row -->
+    <!--<div class="cards">
+        <div class="card">
+            <div class="title">School Registration</div>
+            <p>
+                The form collects school, staff, <br>
+                 facility,and safety details for program setup. 
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="title">Teacher Registration</div>
+            <p>
+                The form collects teacher details, including personal, educational, and teaching information. 
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="title">Classroom Observation</div>
+            <p>
+               This is a checklist for observing a class, focusing on the teacher's methods and how students are learning.
+            </p>
+        </div>
+    </div>-->
+
+    <div class="cards">
+
+    <div class="card">
+        <a href="/school-registration" class="title-link">
+            <div class="title">School Registration</div>
+        </a>
+        <p>
+            The form collects school, staff, <br>
+            facility, and safety details for program setup.
+        </p>
+    </div>
+
+    <div class="card">
+        <a href="/teacher-registration" class="title-link">
+            <div class="title">Teacher Registration</div>
+        </a>
+        <p>
+            The form collects teacher details, including personal, educational, and teaching information.
+        </p>
+    </div>
+
+    <div class="card">
+        <a href="/classroom-observation" class="title-link">
+            <div class="title">Classroom Observation</div>
+        </a>
+        <p>
+            This is a checklist for observing a class, focusing on the teacher's methods and how students are learning.
+        </p>
+    </div>
+
+</div>
+
+
+{% endblock %}

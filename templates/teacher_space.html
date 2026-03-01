@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1 class="page-title">Teacher's Space</h1>
+<p class="page-subtitle">Access reporting tools, manage students, and upload activity records.</p>
+
+<div class="dashboard">
+
+    <!-- Top Row -->
+     <!-- <div class="cards">
+        <div class="card">
+            <div class="title">Chapter Reporting</div>
+            <p>
+                Chapter Reporting for Class 9 <br>
+                The form records chapter-wise teaching progress for each class, subject.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="title">Student Registration</div>
+            <p>
+                Register Class 9 students by entering their personal details and school details.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="title">Guest Lecture / Field Visit</div>
+            <p>
+                Captures details of student visits to industries, including location, guest details.
+            </p>
+        </div>
+    </div>-->
+    <!-- Top Row -->
+<div class="cards">
+
+    <div class="card">
+        <a href="/chapter-reporting" class="title-link">
+            <div class="title">Chapter Reporting</div>
+        </a>
+        <p>
+            Chapter Reporting for Class 9 <br>
+            The form records chapter-wise teaching progress for each class, subject.
+        </p>
+    </div>
+
+    <div class="card">
+        <a href="/student-registration" class="title-link">
+            <div class="title">Student Registration</div>
+        </a>
+        <p>
+            Register Class 9 students by entering their personal details and school details.
+        </p>
+    </div>
+
+    <div class="card">
+        <a href="/guest-lecture" class="title-link">
+            <div class="title">Guest Lecture / Field Visit</div>
+        </a>
+        <p>
+            Captures details of student visits to industries, including location, guest details.
+        </p>
+    </div>
+
+</div>
+
+    <!-- Bottom Row -->
+    <div class="cards bottom">
+
+        <div class="card">
+            <a href="/kaushal-bodh-reporting" class="link-btn">
+                Kaushal Bodh Reporting
+            </a>
+            <p>
+                Collects basic school information and records the grades in which Kaushal Bodh is being implemented.
+            </p>
+        </div>
+
+        <div class="card">
+            <a href="/kaushal-bodh-student" class="link-btn">
+                Kaushal Bodh Student Registration
+            </a>
+            <p>
+                Register Class 6-8 students by entering their personal details and school details.
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
