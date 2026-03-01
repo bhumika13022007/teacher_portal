@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>Your Profile</h1>
+
+<div class="profile-card">
+
+    <!-- PROFILE IMAGE -->
+    {% if user[2] %}
+        <img src="{{ url_for('static', filename='uploads/' + user[2]) }}" class="profile-img">
+    {% else %}
+        <img src="{{ url_for('static', filename='uploads/default.png') }}" class="profile-img">
+    {% endif %}
+
+    <h3>{{ user[0] }}</h3>
+    <p>{{ user[1] }}</p>
+
+    <!-- SMALL BUTTON TO CHANGE PHOTO -->
+    <button class="btn" onclick="toggleUpload()">Change Photo</button>
+
+    <!-- HIDDEN UPLOAD FORM -->
+    <form method="POST" enctype="multipart/form-data" id="uploadForm" class="upload-form">
+        <input type="file" name="photo" required>
+        <button>Upload</button>
+    </form>
+
+</div>
+
+<script>
+function toggleUpload(){
+    const form=document.getElementById("uploadForm");
+    form.style.display=form.style.display==="block" ? "none" : "block";
+}
+</script>
+
+{% endblock %}

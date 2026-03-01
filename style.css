@@ -1,0 +1,319 @@
+/* ---------- GLOBAL ---------- */
+body{
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin:0;
+    background:#f4f6fb;
+    color:#333;
+}
+
+/* ---------- HEADER ---------- */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#8B4A00;
+    padding:15px 50px;
+    color:white;
+    box-shadow:0 2px 6px rgba(0,0,0,0.2);
+}
+
+.logo img{
+    height:42px;
+}
+
+nav a{
+    color:white;
+    margin-left:25px;
+    text-decoration:none;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#ffd447;
+}
+
+/* ---------- CONTAINER ---------- */
+.container{
+    padding:50px 30px;
+    text-align:center;
+}
+
+/* ---------- BUTTONS ---------- */
+.btn{
+    background:#8B4A00;
+    color:white;
+    padding:12px 26px;
+    text-decoration:none;
+    margin:10px;
+    display:inline-block;
+    border-radius:6px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#8B4A00;
+    transform:translateY(-2px);
+}
+
+/* ---------- CARDS ---------- */
+.cards{
+    margin-top:40px;
+}
+
+.card{
+    background:white;
+    padding:30px 25px;
+    margin:15px;
+    width:250px;
+    display:inline-block;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    border-radius:10px;
+    text-decoration:none;
+    color:#222;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 12px 25px rgba(0,0,0,0.15);
+    color:#8B4A00;
+}
+
+/* ---------- FOR HOME CHOICE ---------- */
+.choice{
+    margin-top:60px;
+}
+
+/* ---------- FORMS ---------- */
+form{
+    background:white;
+    padding:35px;
+    width:350px;
+    margin:auto;
+    border-radius:10px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.1);
+}
+
+input{
+    width:90%;
+    padding:12px;
+    margin:12px 0;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:15px;
+}
+
+button{
+    width:95%;
+    padding:12px;
+    border:none;
+    background:#8B4A00;
+    color:white;
+    font-size:16px;
+    border-radius:6px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#8B4A00;
+}
+
+/* ---------- FLASH MESSAGE ---------- */
+.flash{
+    background:#ffe3e3;
+    color:#e2943a;
+    padding:12px;
+    margin-bottom:20px;
+    border-radius:6px;
+    display:inline-block;
+}
+
+/* ---------- TITLES ---------- */
+h1{
+    font-size:32px;
+    color:#8B4A00;
+}
+
+h2{
+    color:#8B4A00;
+}
+
+.profile-card{
+    background:white;
+    width:350px;
+    margin:auto;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+}
+
+.profile-img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:15px;
+    border:3px solid #8B4A00;
+}
+
+/* Upload form hidden by default */
+.upload-form{
+    display:none;
+    margin-top:20px;
+}
+
+/* Better profile spacing */
+.profile-card{
+    background:white;
+    width:360px;
+    margin:auto;
+    padding:35px;
+    border-radius:12px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.1);
+}
+
+.info-section {
+    max-width: 750px;        /* controls paragraph width */
+    margin: 40px auto;       /* centers it horizontally */
+    text-align: center;      /* keeps heading centered */
+    line-height: 1.6;
+}
+
+.info-section p {
+    text-align: justify;     /* makes paragraph look professional */
+    font-size: 16px;
+    color: #333;
+}
+
+.info-section h3 {
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #0e0e0e;
+}
+
+.page-title {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 32px;
+}
+
+.page-subtitle {
+    text-align: center;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.dashboard {
+    width: 90%;
+    margin: auto;
+}
+
+/* Grid layout */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.cards.bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    justify-content: center;
+    gap: 40px;
+}
+/* Card */
+.card {
+    text-align: center;
+    padding: 20px;
+}
+
+
+.title {
+    background: #8B4A00;
+    color: white;
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Paragraph */
+.card p {
+    margin-top: 18px;
+    font-size: 15px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Anchor Button */
+.link-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border: 2px solid #8B4A00;
+    color: #8B4A00;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.link-btn:hover {
+    background: #8B4A00;
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.title-link {
+    text-decoration: none;
+}
+
+.title {
+    background: linear-gradient(135deg, #8B4A00, #8B4A00);
+    color: white;
+    padding: 14px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover Effect */
+.title:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+.title-link {
+    text-decoration: none;
+}
+
+.title {
+    background: linear-gradient(135deg, #8B4A00, #8B4A00);
+    color: white;
+    padding: 14px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.title:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
